@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart | Shopping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-color: #e9e9e9;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .shopping-categories-list {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        align-items: center;
+        padding: 32px;
+        background-color: #fff;
+      }
+
+      .category-link {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      .category-image {
+        width: 80px;
+        height: 80px;
+      }
+
+      .category-title {
+        font-weight: 600;
+        color: #000;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="shopping-categories-list">
+        <div class="categories">
+          <a class="category-link" href="https://google.com">
+            <img
+              class="category-image"
+              src="https://rukminim2.flixcart.com/fk-p-flap/141/141/image/698ba0cebe456aaf.jpg?q=100"
+              alt=""
+            />
+            <span class="category-title">Category Name</span>
+          </a>
+        </div>
+        <div class="categories">
+          <a class="category-link" href="https://google.com">
+            <img
+              class="category-image"
+              src="https://rukminim2.flixcart.com/fk-p-flap/141/141/image/44e10b16e649b691.jpg?q=100"
+              alt=""
+            />
+            <span class="category-title">Category Name</span>
+          </a>
+        </div>
+        <div class="categories">
+          <a class="category-link" href="https://google.com">
+            <img
+              class="category-image"
+              src="https://rukminim2.flixcart.com/fk-p-flap/141/141/image/717b5077a5e25324.jpg?q=100"
+              alt=""
+            />
+            <span class="category-title">Category Name</span>
+          </a>
+        </div>
+        <div class="categories">
+          <a class="category-link" href="https://google.com">
+            <img
+              class="category-image"
+              src="https://rukminim2.flixcart.com/fk-p-flap/141/141/image/4da1d0d19350cc84.jpg?q=100"
+              alt=""
+            />
+            <span class="category-title">Category Name</span>
+          </a>
+        </div>
+        <div class="categories">
+          <a class="category-link" href="https://google.com">
+            <img
+              class="category-image"
+              src="https://rukminim2.flixcart.com/fk-p-flap/141/141/image/9d4e9c605fc1d2d3.jpg?q=100"
+              alt=""
+            />
+            <span class="category-title">Category Name</span>
+          </a>
+        </div>
+        <div class="categories">
+          <a class="category-link" href="https://google.com">
+            <img
+              class="category-image"
+              src="https://rukminim2.flixcart.com/fk-p-flap/141/141/image/a5e656672d0548dd.jpg?q=100"
+              alt=""
+            />
+            <span class="category-title">Category Name</span>
+          </a>
+        </div>
+        <div class="categories">
+          <a class="category-link" href="https://google.com">
+            <img
+              class="category-image"
+              src="https://rukminim2.flixcart.com/fk-p-flap/141/141/image/5b813b64a3179898.jpg?q=100"
+              alt=""
+            />
+            <span class="category-title">Category Name</span>
+          </a>
+        </div>
+        <div class="categories">
+          <a class="category-link" href="https://google.com">
+            <img
+              class="category-image"
+              src="https://rukminim2.flixcart.com/fk-p-flap/141/141/image/7a5e96c10ada8a56.jpg?q=100"
+              alt=""
+            />
+            <span class="category-title">Category Name</span>
+          </a>
+        </div>
+        <div class="categories">
+          <a class="category-link" href="https://google.com">
+            <img
+              class="category-image"
+              src="https://rukminim2.flixcart.com/fk-p-flap/141/141/image/57fe1ffe54569c41.jpg?q=100"
+              alt=""
+            />
+            <span class="category-title">Category Name</span>
+          </a>
+        </div>
+        <div class="categories">
+          <a class="category-link" href="https://google.com">
+            <img
+              class="category-image"
+              src="https://rukminim2.flixcart.com/fk-p-flap/141/141/image/25f400c36bc3487d.jpg?q=100"
+              alt=""
+            />
+            <span class="category-title">Category Name</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <hr />
+    <header>
+      <div
+        id="shopping-categories-list2"
+        class="shopping-categories-list"
+      ></div>
+    </header>
+  </body>
+</html>
+
+<script>
+  const categoriesList = document.getElementById("shopping-categories-list2");
+  const categoriesFragment = document.createDocumentFragment();
+  const categories = [
+    {
+      id: 1,
+      img: "https://rukminim2.flixcart.com/fk-p-flap/141/141/image/698ba0cebe456aaf.jpg?q=100",
+      title: "ABC",
+      href: "https://google.com",
+    },
+    {
+      id: 2,
+      img: "https://rukminim2.flixcart.com/fk-p-flap/141/141/image/698ba0cebe456aaf.jpg?q=100",
+      title: "ABCD",
+      href: "https://google.com",
+    },
+    {
+      id: 1,
+      img: "https://rukminim2.flixcart.com/fk-p-flap/141/141/image/698ba0cebe456aaf.jpg?q=100",
+      title: "ABCDE",
+      href: "https://google.com",
+    },
+    {
+      id: 1,
+      img: "https://rukminim2.flixcart.com/fk-p-flap/141/141/image/698ba0cebe456aaf.jpg?q=100",
+      title: "ABCDEF",
+      href: "https://google.com",
+    },
+  ];
+
+  console.log("categoriesList: ", categoriesList);
+  console.log("categoriesFragment: ", categoriesFragment);
+  console.log("categories: ", categories);
+  for (let i = 0; i < categories.length; i++) {
+    const { img, title, href } = categories[i];
+
+    const categoryElem = document.createElement("div");
+    categoryElem.className = "categories";
+
+    const cardLinkElem = document.createElement("a");
+    cardLinkElem.className = "category-link";
+    cardLinkElem.href = href;
+
+    const imgElem = document.createElement("img");
+    imgElem.className = "category-image";
+    imgElem.src = img;
+
+    const titleElem = document.createElement("span");
+    titleElem.className = "category-title";
+    titleElem.innerText = title;
+
+    cardLinkElem.appendChild(imgElem);
+    cardLinkElem.appendChild(titleElem);
+
+    categoryElem.appendChild(cardLinkElem);
+
+    categoriesFragment.appendChild(categoryElem);
+  }
+
+  categoriesList.appendChild(categoriesFragment);
+</script>

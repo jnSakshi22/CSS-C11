@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justify Content with column direction</title>
+    <style>
+      .box {
+        display: flex;
+        background-color: aquamarine;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        height: 1000px;
+      }
+      .box2 {
+        display: flex;
+        background-color: burlywood;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        height: 1000px;
+      }
+      .box3 {
+        display: flex;
+        background-color: cadetblue;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        height: 1000px;
+      }
+      .box4 {
+        display: flex;
+        background-color: cornflowerblue;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        height: 1000px;
+      }
+      .box5 {
+        display: flex;
+        background-color: darkgoldenrod;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        height: 1000px;
+      }
+      .box6 {
+        display: flex;
+        background-color: turquoise;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        height: 1000px;
+      }
+
+      .item {
+        background-color: tomato;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+      }
+
+      .item:nth-child(even) {
+        background-color: thistle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div class="box2">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div class="box3">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div class="box4">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div class="box5">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div class="box6">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
